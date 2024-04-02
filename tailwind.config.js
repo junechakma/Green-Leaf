@@ -9,10 +9,11 @@ export default {
       colors: {
         "primary": "#C3EFC1",
         "secondary": "#937162",
-        "dark":"#534931",
-        "light":"#9F7962",
-        "white":"#F7F7F7",
-        "cream":"#EBE5E1"
+        "dark": "#534931",
+        "light": "#9F7962",
+        "white": "#F7F7F7",
+        "cream": "#EBE5E1",
+        "green": "#05622E"
       },
       fontFamily: {
         'mont': ['Mont', 'sans-serif'],
