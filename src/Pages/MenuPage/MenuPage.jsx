@@ -1,3 +1,4 @@
+import Tabs from "../../Component/MenuPage/Tabs"
 import HeroPage from "../../Component/Shared/HeroPage"
 
 function MenuPage() {
@@ -6,12 +7,15 @@ function MenuPage() {
       <HeroPage />
 
       {/* Menu */}
-      <div className="py-16 bg-[#F3FFF0] relative">
+      <div className="container py-16 relative">
         <div className="container ">
           <h1 className="text-2xl md:text-4xl text-center font-mont font-semibold"> Our Delicious Menu</h1>
           <p className=" text-center mt-4">The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier.</p>
         </div>
+
+        <Tabs />
       </div>
+
       {/* End Of MEnu */}
 
 
@@ -28,7 +32,6 @@ function MenuPage() {
 
 
       {/* Try Our Special Items */}
-
       <div className="container py-16 flex gap-6 ">
         <div>
           <img src="/assets/menu/rice.png" />
@@ -47,6 +50,9 @@ function MenuPage() {
         </div>
         <img src="/assets/menu/coffee.png" className="w-1/3" />
       </div>
+
+
+
     </div>
   )
 }
