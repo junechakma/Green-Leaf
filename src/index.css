@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  @apply w-[80vw] md:w-[80vw] mx-auto
+  @apply w-[85vw] md:w-[80vw] mx-auto
 }
 
 @layer components {

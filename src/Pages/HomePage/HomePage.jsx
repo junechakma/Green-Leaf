@@ -5,51 +5,51 @@ import { Link } from "react-router-dom";
 
 const productData = [
   {
-    name: "Dark Horse Blend",
+    name: "Karak/Masala Chaii",
     image: "/assets/homepage/product1.png",
-    price: "$12.99",
+    price: "£1.50",
     rating: 4.5
   },
   {
-    name: "Cromp Road Blend",
+    name: "Cappuccino",
     image: "/assets/homepage/product2.png",
-    price: "$12.99",
+    price: "£1.50",
     rating: 4.5
   },
   {
-    name: "Morning Dew Tea",
+    name: "Espresso",
     image: "/assets/homepage/product3.png",
-    price: "$9.99",
+    price: "£1.50",
     rating: 4.2
   },
   {
     name: "Earl Grey Supreme",
     image: "/assets/homepage/product4.png",
-    price: "$14.99",
+    price: "£1.50",
     rating: 4.8
   },
   {
-    name: "French Roast Coffee",
+    name: "Arabic Coffee",
     image: "/assets/homepage/product5.png",
-    price: "$10.99",
+    price: "£1.50",
     rating: 4.6
   },
   {
-    name: "English Breakfast Tea",
+    name: "Sweet Yogurt (Doi)",
     image: "/assets/homepage/product6.png",
-    price: "$11.99",
+    price: "£3.00",
     rating: 4.4
   },
   {
-    name: "Colombian Coffee",
+    name: "Gurer (Molasses) Chaii",
     image: "/assets/homepage/product7.png",
-    price: "$13.99",
+    price: "£1.50",
     rating: 4.7
   },
   {
-    name: "Chamomile Relaxation Tea",
+    name: "Ginger/Lemon/Honey/Mint Chaii",
     image: "/assets/homepage/product8.png",
-    price: "$8.99",
+    price: "£1.50",
     rating: 4.3
   }
 ];
@@ -70,7 +70,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="hidden md:flex justify-between flex-wrap md:flex-nowrap space-x-4 gap-y-6 md:space-x-10 pt-16">
+          <div className="hidden md:flex justify-evenly flex-wrap md:flex-nowrap space-x-4 gap-y-6 md:space-x-10 pt-16">
           
             <div className="flex gap-2 md:space-x-4">
               <div className="flex flex-col items-center md:gap-4">
@@ -250,13 +250,13 @@ function HomePage() {
             {
               productData.map((item, index) => {
                 return (
-                  <div key={index} className="w-full flex flex-col bg-white rounded-xl justify-center items-center md:w-[18vw]">
+                  <Link to="/menu"  key={index} className="w-full flex flex-col bg-white rounded-xl justify-center items-center md:w-[18vw]">
                     <img src={item.image} className="w-full rounded-t-md " />
                     <div className="flex flex-col items-center justify-center pt-4 pb-6">
                       <p className="font-inter font-semibold text-sm md:text-base text-center">{item.name}</p>
                       <p className="font-inter font-semibold text-secondary">{item.price}</p>
                     </div>
-                  </div>
+                  </Link >
                 )
               })
             }
@@ -264,7 +264,7 @@ function HomePage() {
 
           {/* View Button */}
           <div className="flex items-center justify-center py-4">
-            <button className="bg-green px-6 py-3 rounded-md text-white hover:bg-secondary">View All Menu</button>
+            <Link to="/menu"  className="bg-green px-6 py-3 rounded-md text-white hover:bg-secondary">View All Menu</Link>
           </div>
         </div>
 
@@ -282,29 +282,27 @@ function HomePage() {
         {/* Left */}
         <div>
           <h1 className="text-xl md:text-3xl font-mont font-semibold pb-4">Best leaves and beans, imported and brewed!</h1>
-          <p>The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier.</p>
+          <p>We provide the best and only the best when it comes to quality and quantity of choices to select from!</p>
 
           <div className="flex gap-4 py-4 ">
             <IoIosCheckmarkCircle size={28} className="text-green" />
             <div>
-              <p className="font-semibold">Valuation Services</p>
-              <p>Sometimes features require a short description.
-                This can be detailed description</p>
+              <p className="font-semibold">On-time service:</p>
+              <p>All you have to do is just come, tell us what you feel for and get it delivered in a flash while you relax!</p>
             </div>
           </div>
 
           <div className="flex gap-4  ">
             <IoIosCheckmarkCircle size={28} className="text-green" />
             <div>
-              <p className="font-semibold">Valuation Services</p>
-              <p>Sometimes features require a short description.
-                This can be detailed description</p>
+              <p className="font-semibold">Wide-varities: </p>
+              <p>here's choices for every tastebuds out there! We got wide range of beverages and snacks to meet your expectations.</p>
             </div>
           </div>
 
           {/* Reservation Button */}
           <div className="pt-10">
-            <button className="bg-green px-6 py-3 rounded-md text-white  hover:bg-secondary">Order Store Pick-up</button>
+            <Link to="/contact" className="bg-green px-6 py-3 rounded-md text-white  hover:bg-secondary">Order Store Pick-up</Link >
           </div>
         </div>
 

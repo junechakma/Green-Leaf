@@ -13,7 +13,8 @@ export default {
         "light": "#9F7962",
         "white": "#F7F7F7",
         "cream": "#EBE5E1",
-        "green": "#05622E"
+        "green": "#05622E",
+        "snowDrift":"#F0FEF5"
       },
       fontFamily: {
         'mont': ['Mont', 'sans-serif'],
