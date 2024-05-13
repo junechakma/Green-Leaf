@@ -3,13 +3,13 @@ import HeroPage from "../../Component/HeroPage"
 const heroData = {
   title: "Our Locations",
   subtitle: "Visit our outlets nearest to you, for your ultimate convenience!",
-  image: "/assets/location/hero.png"
+  image: "/assets/location/hero.png",
 }
 
 function LocationPage() {
   return (
     <div className="bg-snowDrift">
-      <HeroPage title={heroData.title} description={heroData.subtitle} img={heroData.image} />
+      <HeroPage title={heroData.title} description={heroData.subtitle} img={heroData.image} img2={heroData.image} />
 
       {/* map */}
       <div className="bg-white py-16 ">

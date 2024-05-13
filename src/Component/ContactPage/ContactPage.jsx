@@ -30,12 +30,12 @@ function ContactPage() {
   const heroData = {
     title: "Contact Us",
     subtitle: "Reach out to us for your quest of culinary!",
-    image: "/assets/contact/contact.jpg"
+    image: "/assets/contact/contact.jpg",
   }
 
   return (
     <div className="bg-snowDrift">
-      <HeroPage title={heroData.title} description={heroData.subtitle} img={heroData.image} />
+      <HeroPage title={heroData.title} description={heroData.subtitle} img={heroData.image}  img2={heroData.image}  />
 
 
       {/* banner */}

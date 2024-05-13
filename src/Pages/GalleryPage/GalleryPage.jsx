@@ -25,7 +25,7 @@ function GalleryPage() {
     <div className="relative bg-snowDrift">
 
       {/* Hero */}
-      <HeroPage title={heroData.title} description={heroData.subtitle} img={heroData.image} />
+      <HeroPage title={heroData.title} description={heroData.subtitle} img={heroData.image} img2={heroData.image} />
       <img src="/assets/background/tea-bag.png" className="absolute  left-6 rotate-12 w-24 md:w-36" />
 
       {/* Our Album */}

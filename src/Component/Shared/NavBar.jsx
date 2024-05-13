@@ -99,7 +99,7 @@ function NavBar() {
             <Link to={"https://www.instagram.com/greenleaf.uk?igsh=MTY4MTc0ZWxvOHR1ZQ%3D%3D&utm_source=qr"} target="_blank" className="bg-white p-3 rounded-full text-secondary hover: hover:text-dark">
               <FaInstagram size={18} />
             </Link>
-            <Link to={"https://www.facebook.com/profile.php?id=100054622906779"} target="_blank" className="bg-white p-3 rounded-full text-secondary hover: hover:text-dark">
+            <Link to={"https://www.facebook.com/info.greenleafcafe?mibextid=FsRMYhg12H5JuPBo"} target="_blank" className="bg-white p-3 rounded-full text-secondary hover: hover:text-dark">
               <FaFacebookF size={18} />
             </Link>
           </div>
